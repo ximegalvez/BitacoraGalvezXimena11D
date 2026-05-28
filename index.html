@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Bitácora Ximena Gálvez</title>
+    <link rel="icon" href="Recursos/img/LogCapTics.png" type="image/png">
+
+    <style>
+        /*CSS-lenguaje de programación(Diseñar en cáscada)*/
+        html, body{
+        height: 100%;  
+        margin: 0;  
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    body{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        }
+    header{
+        padding: 20px;
+        background-color: rgb(233, 121, 236);
+        color: azure;
+        }
+    main{
+        flex: 1;
+        padding: 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+        background-color: rgb(250, 189, 234);
+        }
+    footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 50px;
+        border-top: 1px solid rgb(241, 241, 175);
+        background-color: rgb(185, 77, 152);
+        }
+        @media(max-width:600px){
+    footer{
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+        }
+        }
+    header h1{
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        text-shadow: 
+            0 0 5px white,
+            0 0 10px rgb(224, 74, 114),
+            0 0 20px rgb(182, 62, 94),
+            0 0 40px rgb(147, 20, 90);
+    }    
+    .logo-zoom {
+        transition: transform 0.3s ease;
+    }
+    .logo-zoom:hover {
+        transform: scale(1.1);
+    }
+    .semana {
+    background-color: #ffffff; 
+    border-radius: 12px;       
+    padding: 25px;             
+    margin: 20px 0;            
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+    border-left: 8px solid rgb(185, 77, 152); 
+    transition: transform 0.2s ease; 
+    text-align: left;
+    }
+    
+    .semana:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    } 
+    .semana h2 {
+    color: rgb(185, 77, 152);  
+    margin-top: 0;
+    }
+    .visor-pdf {
+        width: 100%;            
+        height: 950px;          
+        border: 2px solid rgb(185, 77, 152); 
+        border-radius: 12px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h1> Bitácora Segunda y Tercera unidad</h1>
+        
+    </header>
+    <main>
+        <main>
+    <div class="semana">
+        <h2>Introducción a Arduino </h2>
+        
+        <p>Arduino es una plataforma de hardware y software libre, flexible y fácil de utilizar. En esta unidad aprendimos sobre:</p>
+        <ul>
+        <li>Tipos de placas como la <strong>Arduino Uno</strong> o <strong>Leonardo</strong>.</li>
+        <li>La diferencia entre señales <strong>Digitales</strong> (1 y 0) y <strong>Análogas</strong>.</li>
+        <li>El uso de <strong>resistencias</strong> para proteger componentes[cite: 1].</li>
+        </ul>
+
+            <iframe src="Introducción Arduino (2) XG 1.pdf" class="visor-pdf"></iframe>
+        </div>
+
+</main>
+    </main>
+    <footer>
+        <span>@ximegal30</span>
+        <img src="https://www.capouilliez.edu.gt/assets/img/logo.png" height="50" width="200" class="logo-zoom">
+    </footer>
+</body>
+</html>
+
